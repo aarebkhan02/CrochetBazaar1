@@ -12,7 +12,7 @@ function scrollToId(id: string) {
 function buildWhatsAppMessage(lines: CartLine[], total: number, customer?: CheckoutData) {
   const items = lines.map((line) => `${line.product.name} × ${line.quantity} — ${money(line.product.price * line.quantity)}`).join('\n');
   return [
-    'Hello CrochetBazaar!','
+    'Hello CrochetBazaar!',
     '',
     'I would like to place an order:',
     items,
