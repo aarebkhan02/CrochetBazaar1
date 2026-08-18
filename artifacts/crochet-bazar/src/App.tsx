@@ -12,7 +12,7 @@ function scrollToId(id: string) {
 function buildWhatsAppMessage(lines: CartLine[], total: number, customer?: CheckoutData) {
   const items = lines.map((line) => `${line.product.name} × ${line.quantity} — ${money(line.product.price * line.quantity)}`).join('\n');
   return [
-    'Hello CrochetBazar!',
+    'Hello CrochetBazaar!','
     '',
     'I would like to place an order:',
     items,
@@ -89,7 +89,7 @@ function App() {
               <Flower2 size={19} strokeWidth={1.7} />
             </span>
             <span>
-              <span className="block font-display text-[1.25rem] font-semibold leading-none">Crochet<span className="text-[hsl(var(--primary))]">Bazar</span></span>
+              <span className="block font-display text-[1.25rem] font-semibold leading-none">Crochet<span className="text-[hsl(var(--primary))]">Bazaar</span></span>
               <span className="eyebrow mt-1 block text-[hsl(var(--muted-foreground))]">little things, lovingly made</span>
             </span>
           </button>
@@ -198,7 +198,7 @@ function App() {
               <img src={products[10].image} alt="Handmade crochet bouquet held on a sunny balcony" className="relative aspect-[.94] w-full rounded-[1.75rem] object-cover shadow-xl" />
               <div className="absolute -bottom-7 -right-3 max-w-[175px] rounded-2xl bg-[hsl(var(--card))] p-4 shadow-xl"><Flower2 className="mb-3 text-[hsl(var(--primary))]" size={22} /><p className="font-display text-lg leading-tight">Made slowly, for your special moments.</p></div>
             </div>
-            <div><p className="eyebrow mb-4 text-[hsl(var(--primary))]">our little story</p><h2 className="max-w-[500px] font-display text-5xl font-semibold leading-[1.02] sm:text-6xl">Made by hand,<br /><em className="text-[hsl(var(--primary))]">made for you.</em></h2><p className="mt-7 max-w-[500px] text-lg leading-8 text-[hsl(var(--muted-foreground))]">CrochetBazar started with yarn, a hook, and the belief that a handmade gift feels different. Each flower and gajra is shaped by one maker, one careful loop at a time.</p><p className="mt-5 max-w-[500px] text-lg leading-8 text-[hsl(var(--muted-foreground))]">These are pieces for dressing up a corner, celebrating a person, or simply adding a little colour to an ordinary Tuesday.</p><button className="mt-8 flex items-center gap-2 text-sm font-bold text-[hsl(var(--primary))]" onClick={() => scrollToId('shop')} data-testid="button-story-shop">See the handmade shelf <ArrowRight size={17} /></button></div>
+            <div><p className="eyebrow mb-4 text-[hsl(var(--primary))]">our little story</p><h2 className="max-w-[500px] font-display text-5xl font-semibold leading-[1.02] sm:text-6xl">Made by hand,<br /><em className="text-[hsl(var(--primary))]">made for you.</em></h2><p className="mt-7 max-w-[500px] text-lg leading-8 text-[hsl(var(--muted-foreground))]">CrochetBazaar started with yarn, a hook, and the belief that a handmade gift feels different. Each flower and gajra is shaped by one maker, one careful loop at a time.</p><p className="mt-5 max-w-[500px] text-lg leading-8 text-[hsl(var(--muted-foreground))]">These are pieces for dressing up a corner, celebrating a person, or simply adding a little colour to an ordinary Tuesday.</p><button className="mt-8 flex items-center gap-2 text-sm font-bold text-[hsl(var(--primary))]" onClick={() => scrollToId('shop')} data-testid="button-story-shop">See the handmade shelf <ArrowRight size={17} /></button></div>
           </div>
         </section>
 
@@ -213,11 +213,11 @@ function App() {
 
       <footer className="bg-[hsl(var(--foreground))] py-12 text-[hsl(var(--background))]">
         <div className="container-shop grid gap-10 md:grid-cols-[1.3fr_.7fr_.7fr]">
-          <div><div className="flex items-center gap-2.5"><span className="grid size-9 place-items-center rounded-full bg-[hsl(var(--secondary))] text-[hsl(var(--foreground))]"><Flower2 size={19} /></span><span className="font-display text-2xl font-semibold">CrochetBazar</span></div><p className="mt-5 max-w-xs text-sm leading-6 opacity-65">Hand-crocheted flowers, gajras and gifts from one small, happy studio.</p><div className="mt-6 flex gap-3"><button className="grid size-9 place-items-center rounded-full border border-white/20 opacity-75 hover:opacity-100" data-testid="button-instagram" aria-label="Instagram"><Instagram size={16} /></button><button className="grid size-9 place-items-center rounded-full border border-white/20 opacity-75 hover:opacity-100" data-testid="button-email" aria-label="Email"><Mail size={16} /></button></div></div>
+          <div><div className="flex items-center gap-2.5"><span className="grid size-9 place-items-center rounded-full bg-[hsl(var(--secondary))] text-[hsl(var(--foreground))]"><Flower2 size={19} /></span><span className="font-display text-2xl font-semibold">CrochetBazaar</span></div><p className="mt-5 max-w-xs text-sm leading-6 opacity-65">Hand-crocheted flowers, gajras and gifts from one small, happy studio.</p><div className="mt-6 flex gap-3"><button className="grid size-9 place-items-center rounded-full border border-white/20 opacity-75 hover:opacity-100" data-testid="button-instagram" aria-label="Instagram"><Instagram size={16} /></button><button className="grid size-9 place-items-center rounded-full border border-white/20 opacity-75 hover:opacity-100" data-testid="button-email" aria-label="Email"><Mail size={16} /></button></div></div>
           <div><p className="eyebrow mb-4 opacity-50">explore</p><div className="grid gap-3 text-sm opacity-75"><button className="text-left hover:opacity-100" onClick={() => scrollToId('home')} data-testid="footer-home">Home</button><button className="text-left hover:opacity-100" onClick={() => scrollToId('shop')} data-testid="footer-shop">Shop all</button><button className="text-left hover:opacity-100" onClick={() => scrollToId('story')} data-testid="footer-about">About the maker</button></div></div>
           <div><p className="eyebrow mb-4 opacity-50">good to know</p><div className="grid gap-3 text-sm opacity-75"><span>Cash on Delivery available</span><span>Made to order with care</span><button className="flex items-center gap-2 text-left hover:opacity-100" onClick={() => openWhatsApp([{ product: products[9], quantity: 1 }])} data-testid="footer-whatsapp"><MessageCircle size={15} /> Order on WhatsApp</button></div></div>
         </div>
-        <div className="container-shop mt-10 border-t border-white/15 pt-5 text-xs opacity-50">© 2026 CrochetBazar · little things, lovingly made.</div>
+        <div className="container-shop mt-10 border-t border-white/15 pt-5 text-xs opacity-50">© 2026 CrochetBazaar · little things, lovingly made.</div>
       </footer>
 
       {selectedProduct && <ProductModal product={selectedProduct} onClose={() => setSelectedProduct(null)} onAdd={buyProduct} onWhatsApp={() => openWhatsApp([{ product: selectedProduct, quantity: 1 }])} isWishlisted={shop.wishlist.includes(selectedProduct.id)} onWishlist={() => shop.toggleWishlist(selectedProduct.id)} />}

@@ -3,8 +3,8 @@ import type { Product } from '@/data/products';
 
 export type CartLine = { product: Product; quantity: number };
 
-const CART_KEY = 'crochetbazar-cart';
-const WISHLIST_KEY = 'crochetbazar-wishlist';
+const CART_KEY = 'crochetbazaar-cart';
+const WISHLIST_KEY = 'crochetbazaar-wishlist';
 
 export function useShop() {
   const [cart, setCart] = useState<CartLine[]>([]);
