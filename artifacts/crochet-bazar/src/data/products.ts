@@ -41,4 +41,4 @@ export const products: Product[] = [
 ];
 
 export const categories = ['All', 'Flowers', 'Gajras', 'Bouquets', 'Roses', 'Sunflowers', 'Earrings'];
-export const WHATSAPP_NUMBER = '919876543210';
+export const WHATSAPP_NUMBER = '916267878947';
