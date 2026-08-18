@@ -1,0 +1,421 @@
+# CrochetBazar — E-commerce Frontend
+
+Create a beautiful, modern, responsive ecommerce frontend called **“CrochetBazar”** for a small handmade crochet business.
+
+The website should feel **warm, elegant, cute, handmade, and premium**, while remaining simple and easy to use.
+
+## Brand
+
+**Name:** CrochetBazar
+
+**Tagline:** “Handmade with love 🧶”
+
+Use a soft handmade aesthetic with:
+
+* Cream/off-white backgrounds
+* Soft pink, peach, lavender and warm brown accents
+* Rounded cards and buttons
+* Subtle shadows
+* Elegant typography
+* Small crochet/flower-inspired decorative elements
+* Smooth hover animations
+* Clean and uncluttered layout
+
+Do not make it look like a generic corporate ecommerce website.
+
+---
+
+## Navbar
+
+Create a responsive navbar containing:
+
+* CrochetBazar logo/name
+* Home
+* Shop
+* Categories
+* About
+* Contact
+* Search icon
+* Cart icon with item count
+
+On mobile, use a hamburger menu.
+
+Make the navbar sticky while scrolling.
+
+---
+
+## Hero Section
+
+Create an attractive hero section with a large heading:
+
+**“Beautiful Crochet, Handmade with Love”**
+
+Subheading:
+
+**“Unique handmade flowers, gajras, bouquets & accessories made specially for you.”**
+
+Buttons:
+
+**Shop Now** → scroll to products
+
+**View Collection** → scroll to categories
+
+Use one of the provided crochet product images as the hero visual.
+
+Add subtle floating crochet/flower decorative elements.
+
+---
+
+## Categories
+
+Create attractive category cards:
+
+* 🌸 Flowers
+* 🌼 Gajras
+* 💐 Bouquets
+* 🌹 Roses
+* 🌻 Sunflowers
+* 💍 Earrings
+
+Clicking a category should filter the products.
+
+---
+
+## Product Section
+
+Create a beautiful responsive product grid.
+
+Use the provided product images.
+
+Products should include:
+
+1. Crochet Flower
+2. Crochet Gajra
+3. Crochet Rose
+4. Blue Crochet Rose
+5. Yellow Crochet Flowers
+6. Rose Gajra
+7. Crochet Sunflower
+8. Big Crochet Gajra
+9. Crochet Earrings
+10. Crochet Flower Bouquet
+
+Each product card should contain:
+
+* Product image
+* Product name
+* Price in **₹ INR**
+* Category
+* “Add to Cart” button
+* “Buy Now” button
+* Wishlist heart icon
+
+Use realistic affordable prices in Indian Rupees, for example:
+
+* Crochet Flower — ₹149
+* Crochet Gajra — ₹249
+* Crochet Rose — ₹129
+* Blue Crochet Rose — ₹149
+* Yellow Crochet Flowers — ₹179
+* Rose Gajra — ₹299
+* Crochet Sunflower — ₹199
+* Big Crochet Gajra — ₹399
+* Crochet Earrings — ₹199
+* Crochet Flower Bouquet — ₹499
+
+Display prices clearly using the ₹ symbol.
+
+---
+
+## Product Details
+
+When a product is clicked, open a product details page/modal containing:
+
+* Large product image
+* Product name
+* Price
+* Category
+* Description
+* Quantity selector
+* Add to Cart
+* Buy Now
+* WhatsApp Order button
+
+Example description:
+
+**“Beautiful handmade crochet flower crafted with care. Perfect for gifting, decoration and special occasions.”**
+
+---
+
+## Shopping Cart
+
+Create a functional frontend cart.
+
+Cart should show:
+
+* Product image
+* Product name
+* Price
+* Quantity +/− controls
+* Remove button
+* Individual item total
+* Subtotal
+* Delivery charge
+* Grand total
+
+Use localStorage so the cart remains after refreshing the page.
+
+Show:
+
+**Payment Method: Cash on Delivery (COD)**
+
+Do not implement online payment.
+
+---
+
+## Checkout / Place Order
+
+Create a simple checkout form.
+
+Fields:
+
+* Full Name
+* Mobile Number
+* Delivery Address
+* City
+* State
+* Pincode
+* Optional Order Note
+
+Show an order summary on the right.
+
+Payment method:
+
+### 💵 Cash on Delivery
+
+Clearly mention:
+
+**“Pay when your order is delivered.”**
+
+After clicking **Place Order**, do NOT implement a real payment gateway.
+
+Instead, create a WhatsApp order flow.
+
+---
+
+## WhatsApp Ordering
+
+Add a prominent:
+
+**“Order on WhatsApp”**
+
+button.
+
+When clicked, redirect the customer to WhatsApp using a WhatsApp URL with a pre-filled message.
+
+The message should automatically contain:
+
+* Customer name
+* Products ordered
+* Quantities
+* Prices
+* Total amount
+* Delivery address
+* Payment method: COD
+
+Example generated message:
+
+“Hello CrochetBazar! 🧶
+
+I would like to place an order:
+
+🌸 Crochet Rose × 2 — ₹258
+🌼 Crochet Gajra × 1 — ₹249
+
+Total: ₹507
+
+Name: Customer Name
+Mobile: 98XXXXXXXX
+Address: Customer Address
+Payment: Cash on Delivery
+
+Thank you! ❤️”
+
+Use a configurable WhatsApp number in the frontend so the business owner can easily replace it with their actual number.
+
+Also add a WhatsApp icon/button in the navbar or contact section.
+
+---
+
+## Order Confirmation
+
+After the customer clicks the WhatsApp order button, show a small confirmation screen/message:
+
+**“Your order details are ready on WhatsApp! 💚”**
+
+**“Please send the WhatsApp message to confirm your COD order.”**
+
+Add a button:
+
+**“Continue Shopping”**
+
+---
+
+## Home Page Sections
+
+The homepage should be scrollable and contain:
+
+1. Navbar
+2. Hero section
+3. Featured products
+4. Categories
+5. All products
+6. Why Choose CrochetBazar?
+7. Handmade / About section
+8. Customer testimonials with dummy data
+9. WhatsApp order CTA
+10. Footer
+
+---
+
+## Why Choose Us
+
+Create 3–4 attractive cards:
+
+### 🧶 100% Handmade
+
+Every product is carefully handmade.
+
+### 💕 Made With Love
+
+Unique products crafted with care.
+
+### 📦 COD Available
+
+Pay conveniently when your order arrives.
+
+### 💬 Easy WhatsApp Ordering
+
+Place your order directly through WhatsApp.
+
+---
+
+## About Section
+
+Create a warm section saying:
+
+**“Made by Hand, Made for You”**
+
+Explain that CrochetBazar offers handmade crochet flowers, gajras, bouquets and accessories suitable for gifting, decoration and special occasions.
+
+Use a crochet product image beside the text.
+
+---
+
+## Testimonials
+
+Add 3 attractive dummy testimonials:
+
+★★★★★
+“Absolutely beautiful! The crochet flowers looked even better in person.”
+
+★★★★★
+“Loved the gajra. It was so cute and beautifully made!”
+
+★★★★★
+“The bouquet was perfect for gifting. Highly recommended!”
+
+---
+
+## Footer
+
+Footer should contain:
+
+**CrochetBazar**
+
+“Handmade with love 🧶”
+
+Links:
+
+* Home
+* Shop
+* About
+* Contact
+* Privacy Policy
+* Shipping Policy
+
+Also include:
+
+**Order on WhatsApp**
+
+**Cash on Delivery Available**
+
+Social media icons can be included as placeholders.
+
+---
+
+## UI / UX Requirements
+
+Make the website:
+
+* Fully responsive
+* Mobile-first
+* Beautiful on desktop and mobile
+* Fast and lightweight
+* Smooth scrolling
+* Smooth hover animations
+* Subtle page transitions
+* Attractive product cards
+* Clean spacing
+* Rounded corners
+* Accessible buttons
+* Loading states where appropriate
+* Empty cart state
+* Product search
+* Category filtering
+* Cart persistence using localStorage
+
+Use animations carefully. Avoid excessive animations.
+
+---
+
+## Technical Requirements
+
+Build this as a **frontend-only application**.
+
+Recommended stack:
+
+* React.js
+* Vite
+* Tailwind CSS
+* React Router
+* Lucide React icons
+* LocalStorage for cart state
+
+No backend is required.
+
+No database is required.
+
+No online payment gateway is required.
+
+No authentication is required.
+
+Use dummy/local product data.
+
+Keep all product information in a single easy-to-edit data file.
+
+Keep the WhatsApp number in one configuration variable so the shop owner can easily change it.
+
+---
+
+## Important
+
+The provided crochet product images should actually be used throughout the website rather than using generic stock images.
+
+Make the final website feel like a **real small Indian handmade crochet brand**, not a template.
+
+The overall experience should be:
+
+**Browse → View Product → Add to Cart → Checkout → WhatsApp → COD Order**
+
+Focus heavily on a **beautiful visual presentation of the crochet products**.

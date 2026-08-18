@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "CrochetBazar"
+description = "A warm, handcrafted storefront for browsing crochet flowers, gajras, bouquets, roses, and accessories, with a functional cart, COD checkout, and WhatsApp ordering flow."
+version = "1.0.0"
+id = "artifacts/crochet-bazar"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25974
+
+[services.development]
+run = "pnpm --filter @workspace/crochet-bazar run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/crochet-bazar", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/crochet-bazar/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25974"
+BASE_PATH = "/"
